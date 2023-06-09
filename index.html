@@ -19,7 +19,7 @@ body {font-family: "Lato", sans-serif}
 <!-- Navbar -->
 <header>
     <nav id="nav-bar" class="w3-top">
-        <div class="w3-bar w3-black w3-card">
+        <div class="w3-bar w3-blue w3-card"> <!-- w3-COLOR -->
             <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
             <a href="#PROJECT" class="w3-bar-item w3-button w3-padding-large">DECISION-MAP PROJECT</a>
             <a href="demo.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DEMO</a>
@@ -28,6 +28,14 @@ body {font-family: "Lato", sans-serif}
         </div>
     </nav>
 </header>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="nav-small" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="demo.html" class="w3-bar-item w3-button w3-padding-large">DEMO</a>
+  <a href="how.html" class="w3-bar-item w3-button w3-padding-large">HOW TO USE</a>
+  <a href="#TEAM" class="w3-bar-item w3-button w3-padding-large">TEAM INFO</a>
+  <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large">MERCH</a> -->
+</div>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
@@ -125,7 +133,7 @@ body {font-family: "Lato", sans-serif}
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i> -->
   <!-- <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
-  <p class="footnote">CORTEX Lab, University of Victoria </p>
+  <p class="footnote">CORTEX Lab <br> University of Victoria </p>
 </footer>
 
 <script>
@@ -147,7 +155,7 @@ function carousel() {
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
-  var x = document.getElementById("navDemo");
+  var x = document.getElementById("nav-small");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
   } else { 
