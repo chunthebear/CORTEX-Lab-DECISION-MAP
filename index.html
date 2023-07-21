@@ -16,32 +16,39 @@ body {font-family: "Lato", sans-serif}
 </head>
 <body>
 
+  
+
 <!-- Navbar -->
 <header>
-    <nav id="nav-bar" class="w3-top">
-        <div class="w3-bar w3-blue w3-card"> <!-- w3-COLOR -->
-            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-            <a href="#PROJECT" class="w3-bar-item w3-button w3-padding-large">DECISION-MAP PROJECT</a>
-            <a href="demo.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DEMO</a>
-            <a href="how.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOW TO USE</a>
-            <a href="#TEAM" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEAM INFO</a>
+  <div id="banner" class="w3-padding-large">
+    <img  height="200" style="object-fit:contain" src="images/DECISIONMAP_Logo_Final.png" alt="Logo for DECISION-MAP">
+  </div>
+
+    <nav id="nav-bar"> <!-- class="w3-top" -->
+        <div class="w3-bar w3-white w3-card"> <!-- w3-COLOR -->
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="showNavMenuForSmallScreen()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="demo.html" class="w3-bar-item w3-button w3-padding-large">USE DECISION-MAP</a>
+            <a href="#ABOUT" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+            <a href="#TEAM" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESEARCH TEAM</a>
+            <a href="#RESOURCES" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OTHER RESOURCES</a>
+            <a href="#CONTACT" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT US</a>
         </div>
     </nav>
 </header>
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="nav-small" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="demo.html" class="w3-bar-item w3-button w3-padding-large">DEMO</a>
-  <a href="how.html" class="w3-bar-item w3-button w3-padding-large">HOW TO USE</a>
-  <a href="#TEAM" class="w3-bar-item w3-button w3-padding-large">TEAM INFO</a>
-  <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large">MERCH</a> -->
+  <a href="#ABOUT" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
+  <a href="#TEAM" class="w3-bar-item w3-button w3-padding-large">RESEARCH TEAM</a>
+  <a href="#RESOURCES" class="w3-bar-item w3-button w3-padding-large">OTHER RESOURCES</a>
+  <a href="#CONTACT" class="w3-bar-item w3-button w3-padding-large">CONTACT US</a>
 </div>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
+  <!-- <div class="mySlides w3-display-container w3-center">
     <img src="/w3images/P1.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>P1</h3>
@@ -61,38 +68,155 @@ body {font-family: "Lato", sans-serif}
       <h3>P3</h3>
       <p><b>D3</b></p>    
     </div>
-  </div>
+  </div> -->
 
     <!-- The Project Section -->
-    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="PROJECT">
-      <h2 class="w3-wide">DECISION-MAP PROJECT</h2>
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="ABOUT">
+      <h2 class="w3-wide">DECISION-MAP</h2>
       <p class="w3-opacity"><i>some words</i></p>
       <p class="w3-justify">some more words.</p>
     </div>
 
   <!-- The Team Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="TEAM">
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:900px" id="TEAM">
     <h2 class="w3-wide">RESEARCH TEAM</h2>
-    <p class="w3-opacity"><i>some words</i></p>
-    <p class="w3-justify">some more words.</p>
+    <!-- <p class="w3-opacity"><i>some words</i></p>
+    <p class="w3-justify">some more words.</p> -->
     <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Person</p>
-        <img src="/member.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+
+      <div class="w3-quarter">
+        <img src="images/people/COLE.Headshot.jpg" class="w3-round w3-margin-top" style="width:180px;height:180px;object-fit:cover;">
+        <p>Cole Kennedy <br> 
+          <span style="font-size:smaller; color: rgb(100, 100, 100);"> 
+            Founder, Lead Researcher & Project Manager 
+          </span>
+        </p>
       </div>
-      <div class="w3-third">
-        <p>Person</p>
-        <img src="/member.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+
+      <div class="w3-quarter">
+        <img src="images/people/Mauricio.Headshot.jpeg" class="w3-round w3-margin-top" style="width:180px;height:180px;object-fit:cover;">
+        <p>Dr. Mauricio Garcia-Barrera<br> 
+          <span style="font-size: smaller; color: rgb(100, 100, 100);"> 
+            Research Supervisor 
+          </span>
+        </p>
       </div>
-      <div class="w3-third">
-        <p>Person</p>
-        <img src="/member.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      
+      <div class="w3-quarter">
+        <img src="images/people/EMILY.jpeg" class="w3-round w3-margin-top" style="width:180px;height:180px;object-fit:cover;">
+        <p> Emily Spargo <br> 
+          <span style="font-size: smaller; color: rgb(100, 100, 100);"> 
+            Senior Research Assistant & Project Coordinator  
+          </span>
+        </p>
+      </div>
+
+      <div class="w3-quarter">
+        <img src="images/people/zahra-premji.headshot.jpeg" class="w3-round w3-margin-top" style="width:180px;height:180px;object-fit:cover;">
+        <p> Dr. Zahra Premji <br> 
+          <span style="font-size: smaller; color: rgb(100, 100, 100);"> 
+            Health Research Librarian  
+          </span>
+        </p>
+      </div>
+
+      <div class="w3-row w3-padding-0"> <!-- divider for every 4 people -->
+
+      <div class="w3-quarter">
+        <img src="images/people/Nicholas.jpg" class="w3-round w3-margin-top" style="width:180px;height:180px;object-fit:cover;">
+        <p> Nicholas Gavas <br> 
+          <span style="font-size: smaller; color: rgb(100, 100, 100);"> 
+            Research Assistant  
+          </span>
+        </p>
+      </div>
+
+      <div class="w3-quarter">
+        <img src="images/people/DevonHeadshot.JPG" class="w3-round w3-margin-top" style="width:180px;height:180px;object-fit:cover;">
+        <p> Devon Rees <br> 
+          <span style="font-size: smaller; color: rgb(100, 100, 100);"> 
+            Research Assistant  
+          </span>
+        </p>
+      </div>
+
+      <div class="w3-quarter">
+        <img src="images/people/" class="w3-round w3-margin-top" style="width:180px;height:180px;object-fit:cover;">
+        <p> Bernard Dupriez-Mitchell <br> 
+          <span style="font-size: smaller; color: rgb(100, 100, 100);"> 
+            Research Assistant  
+          </span>
+        </p>
+      </div>
+
+      <div class="w3-quarter">
+        <img src="images/people/PHILLIP.jpg" class="w3-round w3-margin-top" style="width:180px;height:180px;object-fit:cover;">
+        <p> Phillip Havin <br> 
+          <span style="font-size: smaller; color: rgb(100, 100, 100);"> 
+            Research Assistant   
+          </span>
+        </p>
+      </div>
+
+      <div class="w3-row w3-padding-0"> <!-- divider for every 4 people -->
+
+      <div class="w3-quarter">
+        <img src="images/people/Ericawoodin.headshot.jpeg" class="w3-round w3-margin-top" style="width:180px;height:180px;object-fit:cover;">
+        <p> Dr. Erica Woodin <br> 
+          <span style="font-size: smaller; color: rgb(100, 100, 100);"> 
+            Research Supervisor  
+          </span>
+        </p>
+      </div>
+
+      <div class="w3-quarter">
+        <img src="images/people/Yichun.jpeg" class="w3-round w3-margin-top" style="width:180px;height:180px;object-fit:cover;">
+        <p> Yichun Zhao <br> 
+          <span style="font-size: smaller; color: rgb(100, 100, 100);"> 
+            Research Assistant    
+          </span>
+        </p>
+      </div>
+
+      <div class="w3-quarter">
+        <img src="images/people/Simon.jpg" class="w3-round w3-margin-top" style="width:180px;height:180px;object-fit:cover;">
+        <p> Simon Kurkimaki <br> 
+          <span style="font-size: smaller; color: rgb(100, 100, 100);"> 
+            Research Assistant  
+          </span>
+        </p>
+      </div>
+
+      <div class="w3-quarter">
+        <img src="images/people/Schmidt_Julia.Headshot.jpeg" class="w3-round w3-margin-top" style="width:180px;height:180px;object-fit:cover;">
+        <p> Dr. Julia Schmidt <br> 
+          <span style="font-size: smaller; color: rgb(100, 100, 100);"> 
+            Research Supervisor  
+          </span>
+        </p>
+      </div>
+
+      <div class="w3-row w3-padding-0"> <!-- divider for every 4 people -->
+
+      <div class="w3-quarter">
+        <img src="images/people/Janelle.Headshot.jpeg" class="w3-round w3-margin-top" style="width:180px;height:180px;object-fit:cover;">
+        <p> Janelle Breese Biagnoni <br> 
+          <span style="font-size: smaller; color: rgb(100, 100, 100);"> 
+            Lead Community Partner   
+          </span>
+        </p>
       </div>
     </div>
   </div>
 
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="RESOURCES">
+    <h2 class="w3-wide">OTHER RESOURCES</h2>
+    <p class="w3-opacity"><i>some words</i></p>
+    <p class="w3-justify">some more words.</p>
+  </div>
+
   <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="CONTACT">
     <h2 class="w3-wide w3-center">CONTACT</h2>
     <div class="w3-row w3-padding-32">
       <!-- <div class="w3-col m6 w3-large w3-margin-bottom"> -->
@@ -125,7 +249,7 @@ body {font-family: "Lato", sans-serif}
 <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%"> -->
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+<footer class="w3-container w3-padding-16 w3-center w3-opacity w3-light-grey w3-small">
   <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
   <i class="fa fa-instagram w3-hover-opacity"></i>
   <i class="fa fa-snapchat w3-hover-opacity"></i>
@@ -133,7 +257,7 @@ body {font-family: "Lato", sans-serif}
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i> -->
   <!-- <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
-  <p class="footnote">CORTEX Lab <br> University of Victoria </p>
+  <p class="footnote" style="font-size:12px">CORTEX Lab <br> University of Victoria </p>
 </footer>
 
 <script>
@@ -154,7 +278,7 @@ function carousel() {
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
+function showNavMenuForSmallScreen() {
   var x = document.getElementById("nav-small");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
